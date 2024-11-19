@@ -2,7 +2,7 @@
   Capteur de température DS1631 en I2C
   
   Programme basique sur Arduino Mega
-  IDE Visual Studio Code 1.95.2
+  IDE Arduino
   
   Constituants :
   -  Capteur de température DS1631
