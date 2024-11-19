@@ -59,7 +59,7 @@ void setup() {
 
   Wire.beginTransmission(Addr);
   Wire.write(0xAC); // L'arduino envoi 0xAC qui permet d'écrire dans le registre de configuration.
-  Wire.write(0x0C); // L'arduino envoie 0x0C qui permet ...
+  Wire.write(0x0C); // L'arduino envoie 0x0C qui permet mettre la configuration que je veux.
   Wire.endTransmission();
 
   Wire.requestFrom(Addr, 1); // Va envoyer une requête au capteur pour pouvoir lire le registre de configuration sur un bit.
