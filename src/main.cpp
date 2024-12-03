@@ -74,7 +74,10 @@ void setup() {
 
 
 
-  Wire.beginTransmission(Addr);
+ /* 
+ Cette partie commentée sert pour fixer les seuils.
+ 
+ Wire.beginTransmission(Addr);
   Wire.write(0xA2); // Accède à TL pour écrire sa nouvelle valeur sur 2 Bits.
   Wire.write(0x1A);
   Wire.write(0x00);
@@ -110,7 +113,7 @@ void setup() {
   Serial.println("//////////////////////////////");
   delay(1000);
 
-
+*/
 
   Wire.beginTransmission(Addr);
   Wire.write(0x51); // On demande au capteur de commencer à convertir la température.
@@ -140,7 +143,7 @@ void loop() {
 
 
 // Partie du code qui sert à convertir la température du binaire vers les décimales.
-  int partie_entiere = T_MSB & 0b01111111;
+
 
   float partie_decimale = 0.0;
 
